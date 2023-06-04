@@ -93,11 +93,12 @@ const Navigation = React.forwardRef((props, ref) => {
             </NavLink>
           )}
           <NavLink
+            activeClassName="active"
             href={about.resume}
             target="_blank"
             rel="noreferrer noopener"
           >
-            Resume
+            | C.V.
           </NavLink>
         </Nav>
       </Navbar.Collapse>
