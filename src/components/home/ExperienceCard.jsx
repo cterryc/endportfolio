@@ -6,12 +6,13 @@ import {
 
 const ExperienceCard = ({ data }) => {
 
-  let valor = (data.role === "Henry Bootcamp") ? 350 : 230
+  let valorUno = (data.role === "Henry Bootcamp") ? 320 : 180
+  let valorDos = (data.role === "Henry Bootcamp") ? 80 : 90
   
   return (
     <Col lg="6">
       <div className="pb-5 text-center">
-        <img width={valor} height={80} className=" bg-white mb-3" src={data.companylogo} alt="" />
+        <img width={valorUno} height={valorDos} className=" bg-white mb-3" src={data.companylogo} alt="" />
         <p className="lead">
           {data.role}
           <br />
