@@ -6,6 +6,7 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
+  alias: "Terry Martel",
   firstName: "Daniel",
   middleName: "",
   lastName: "Martel",

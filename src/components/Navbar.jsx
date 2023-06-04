@@ -40,7 +40,7 @@ const Navigation = React.forwardRef((props, ref) => {
       expand="lg"
     >
       <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
-        {`<${mainBody.firstName} />`}
+        {`<${mainBody.alias} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -92,15 +92,13 @@ const Navigation = React.forwardRef((props, ref) => {
               | Contactame
             </NavLink>
           )}
-          <div className="derecha">
-            <NavLink
-              href={about.resume}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Resume
-            </NavLink>
-          </div>
+          <NavLink
+            href={about.resume}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Resume
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

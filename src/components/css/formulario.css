@@ -59,11 +59,16 @@
 
 input[type="submit"] {
     display: block;
-    padding: 6px 30px;
-    margin: 20px;
-    font-size: 14px;
+    padding: 0px 30px;
+    margin: 12px;
+    font-size: 20px;
     background-color: #6989e2;
     color: #fff;
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:hover {
+    color: rgb(114, 106, 106);
+    background-color: #9ea9db;
 }
