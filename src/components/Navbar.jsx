@@ -76,6 +76,22 @@ const Navigation = React.forwardRef((props, ref) => {
               | Proyectos
             </NavLink>
           )}
+          {repos.show && (
+            <NavLink
+              activeClassName="active"
+              href={process.env.PUBLIC_URL + "/#educacion"}
+            >
+              | Educación
+            </NavLink>
+          )}
+          {repos.show && (
+            <NavLink
+              activeClassName="active"
+              href={process.env.PUBLIC_URL + "/#contactame"}
+            >
+              | Contactame
+            </NavLink>
+          )}
           <div className="derecha">
             <NavLink
               href={about.resume}

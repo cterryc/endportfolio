@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Jumbotron } from "./migration";
+import emailjs from '@emailjs/browser';
+import "../css/formulario.css";
 
 const Leadership = ({ heading, message, img, imageSize }) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
   return (
-    <Jumbotron
-      id="leadership"
+    <>
+      {/* <Jumbotron
+      id="contactame"
       className="m-0"
       style={{ backgroundColor: "white" }}
     >
@@ -38,7 +53,18 @@ const Leadership = ({ heading, message, img, imageSize }) => {
           </Carousel>
         </div>
       </div>
-    </Jumbotron>
+    </Jumbotron> */}
+      <form id="contactame" ref={form} onSubmit={sendEmail} className="field">
+        <h2 className="display-4 pb-5 text-center">{heading}</h2>
+        {/* <label>Name</label> */}
+        <input type="text" name="user_name" placeholder="Name..." />
+        {/* <label>Email</label> */}
+        <input type="email" name="user_email" placeholder="Email..." />
+        {/* <label>Message</label> */}
+        <textarea name="message" placeholder="Message..."/>
+        <input type="submit" value="Send" />
+      </form>
+    </>
   );
 };
 
