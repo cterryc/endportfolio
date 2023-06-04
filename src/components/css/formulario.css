@@ -6,7 +6,7 @@
     align-items: center;
     /* width: 200px; */
     /* background-color: rgba(177, 176, 176, 0.5); */
-    padding: 64px 64px 64px 64px;
+    padding: 64px 0px 64px 0px;
     background: linear-gradient(to bottom, transparent, transparent), linear-gradient(to bottom, #e9e8e8, #e2e2e2, #d5d5d6, #ffffff);
     /* background-blend-mode: overlay; */
 }
@@ -19,7 +19,8 @@
 
 .field input {
     display: block;
-    min-width: 450px;
+    min-width: 350px;
+    width: 40%;
     line-height: 2.5;
     font-size: 14px;
     border-radius: 10px;
@@ -35,7 +36,8 @@
 
 .field textarea {
     /* display: block; */
-    min-width: 450px;
+    width: 40%;
+    min-width: 350px;
     min-height: 200px;
     line-height: 2.5;
     font-size: 14px;
