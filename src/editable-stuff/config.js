@@ -106,7 +106,7 @@ const skills = {
     { name: "Express", value: 90 },
     { name: "PosrgreSQL", value: 70 },
     { name: "Sequelize", value: 85 },
-    { name: "Node.Js", value: 75 },
+    { name: "Node.Js", value: 78 },
     { name: "JavaScript", value: 90 },
     { name: "React", value: 65 },
     { name: "HTML/CSS", value: 70 },
