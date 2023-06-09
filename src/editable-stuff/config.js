@@ -58,7 +58,7 @@ const about = {
     "¡Hola! Soy Daniel Martel, un entusiasta desarrollador full-stack junior con un certificado en desarrollo web obtenido en 'Soy Henry', un destacado bootcamp de programación. Me formé en el 'Instituto Tecnológico IDAT', adquiriendo conocimientos sólidos en una amplia gama de tecnologías y metodologías de desarrollo. Me apasiona especialmente el ensamblaje de computadoras y comprendo la importancia de una base sólida en hardware para el desarrollo de software. Esto me permite tener una comprensión profunda de cómo interactúan los componentes de hardware y software para crear aplicaciones eficientes y robustas.",
   message2: "Aunque tuve un revés en mi carrera cuando mi negocio se vio afectado por la pandemia de COVID-19 en 2020, esta experiencia me enseñó la importancia de la resiliencia y la adaptabilidad en el campo tecnológico. Aprendí a superar obstáculos y a buscar nuevas oportunidades para crecer y mejorar mis habilidades.",
   // resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-  resume: "https://rxresu.me/danyel.martel/daniel-martel"
+  resume: "https://rxresu.me/danyel.martel/curriculum"
 };
 
 // PROJECTS SECTION
