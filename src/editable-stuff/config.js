@@ -129,8 +129,7 @@ const skills = {
 const getInTouch = {
   show: true,
   heading: "Contactame",
-  message:
-  "¡Actualmente estoy buscando oportunidades como desarrollador full-stack de tiempo completo! Si conoce algún puesto disponible, si tiene alguna pregunta o si solo quiere saludar, no dude en enviarme un correo electrónico a",
+  message: "¡Actualmente estoy buscando oportunidades como desarrollador full-stack de tiempo completo! Si conoce algún puesto disponible, si tiene alguna pregunta o si solo quiere saludar, no dude en enviarme un correo electrónico a",
   email: "danyel.martel@gmail.com",
 };
 
@@ -151,9 +150,16 @@ const experiences = {
   ]
 }
 
+const listaRepos = [
+  "https://api.github.com/repos/cterryc/tic-tac-toe",
+  "https://api.github.com/repos/pianti10/Bolsillo-Feliz",
+  "https://api.github.com/repos/cterryc/Pi-Videogames",
+  "https://api.github.com/repos/cterryc/endportfolio",
+]
+
 // Blog SECTION
 // const blog = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, listaRepos };

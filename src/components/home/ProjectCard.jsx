@@ -6,6 +6,7 @@ import axios from "axios";
 import CardButtons from "./ComponentesProjectsCard/cardbuttons";
 import Language from "./ComponentesProjectsCard/languaje";
 import CardFooter from "./ComponentesProjectsCard/cardfooter";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({ value }) => {
   const {
@@ -15,6 +16,7 @@ const ProjectCard = ({ value }) => {
     stargazers_count,
     languages_url,
     pushed_at,
+    homepage
   } = value;
   return (
     <Col md={6}>
@@ -23,6 +25,8 @@ const ProjectCard = ({ value }) => {
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
           {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+          <br />
+          <Link to={homepage ? homepage : null}>{homepage}</Link>
           <hr />
           {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />

@@ -4,6 +4,7 @@ import { Jumbotron } from "./migration";
 import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
+import { listaRepos } from "../../editable-stuff/config.js";
 
 const dummyProject = {
   name: null,
@@ -30,13 +31,14 @@ const Project = ({ heading, username, length, specfic }) => {
     let repoList = [];
     try {
       // getting all repos
-      const response = await axios.get(allReposAPI);
+      // ? const response = await axios.get(allReposAPI);
       // slicing to the length
-      repoList = [...response.data.slice(0, length)];
+      // ? repoList = [...response.data.slice(0, length)];
       // adding specified repos
       try {
-        for (let repoName of specfic) {
-          const response = await axios.get(`${specficReposAPI}/${repoName}`);
+        // ! recordar añadir imagen a cada proyecto, cambiar el array con los 4 proyectos a un array de objetos con imagen
+        for (let repoName of listaRepos) {
+          const response = await axios.get(repoName);
           repoList.push(response.data);
         }
       } catch (error) {
@@ -44,10 +46,12 @@ const Project = ({ heading, username, length, specfic }) => {
       }
       // setting projectArray
       // TODO: remove the duplication.
+      console.log("esto es repoList",repoList)
       setProjectsArray(repoList);
     } catch (error) {
       console.error(error.message);
     }
+    //lo que esta dentro de los corchetes ya no es necesario y podria quitalo
   }, [allReposAPI, length, specfic, specficReposAPI]);
 
   useEffect(() => {
